@@ -2,6 +2,8 @@
  
 ## Overview
 
+In this project, we attempted to create a binary classifier that is capable of predicting whether charity organizations will be successful if funded by fictional foundation Alphabet Soup. The model was trained on a CSV database of over 34,000 organizations that have received funding from Alphabet Soup. Three attempts were made at optimizing the model to acheive an accuracy score above 75%.
+
 ## Results
 
 ### Data Preprocessing
