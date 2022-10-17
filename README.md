@@ -13,6 +13,9 @@ In this project, we attempted to create a binary classifier that is capable of p
 * "EIN" and "NAME" were neither used as targets nor features, because they were purely identification columns. They were dropped from the input data.
 * During preprocessing, we picked out APPLICATION_TYPE and CLASSIFICATION for binning, since they had more unique values than most of the other columns and could have potentially confused the model. Density plots were used to determine that APPLICATION_TYPE values under 500 and CLASSIFICATION values under 1000 should be put into respective "Other" categories for simplification purposes.
 
+![Density plot of APPLICATION_TYPE](/images/application_type_density.png)
+![Density plot of CLASSIFICATTION](/images/classification_density.png)
+
 ### Compiling, Training, and Evaluating the Model
 
 * Our initial model contained two hidden layers, with the first containing 80 nodes and the second containing 30 nodes. Considering the goal was binary classification, with the model predicting whether or not an organization used the money successfully, it was unlikely that we would need more than two or three hidden layers. We also followed the rule of thumb of having about twice as many nodes in the first hidden layer as there were inputs (80 versus 43).
